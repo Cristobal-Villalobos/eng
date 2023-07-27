@@ -206,7 +206,18 @@
                 <footer><small class="float-end text-end">Last update: 
                 	<script type="text/javascript">
 							<!--
-								document.write(document.lastModified);
+								var myDate = new Date(document.lastModified);
+
+								console.log('toISOString', myDate.toISOString());
+								
+								myNewDate = new Intl.DateTimeFormat(
+								            "de-AT",
+								            {year: "numeric", month: "numeric", day: "numeric"}
+								).format(myDate).replace(/\./g, '/');
+								
+								console.log('Intl.DateTimeFormat', myNewDate);
+								
+								document.write(myNewDate);
 							// -->
 						</script>
                 </small>
