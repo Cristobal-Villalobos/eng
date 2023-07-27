@@ -133,20 +133,20 @@
                                 <td class="align-top"><a href="http://smai.emath.fr/cemracs/cemracs23/summer-school.html">Scientific Machine Learning</a></td>
                                 <td class="align-top text-end">
                                 Marseille, France<br>
-                                17 &ndash; 21 of July 2023<br>-----</td>
+                                17 &ndash; 21 of July 2023<br><font color="white">-</font></td>
                             </tr>
                             <tr>
                                 <td class="align-top"><a href="https://malga.unige.it/education/schools/dl2022/">Deep Learning: a hands-on introduction</a> and <a href="https://malga.unige.it/education/schools/cvcc2022">Computer Vision Crash Course</a></td>
                                 <td class="align-top text-end">
                                 Genoa, Italy<br>
-                                12 &ndash; 20 of July 2022<br></td>
+                                12 &ndash; 20 of July 2022<br><font color="white">-</font></td>
                             </tr>
                             <tr>
                                 <td>“Escuela Matemática de América Latina y el Caribe 2010”<br>
                     (Mathematical School of Latin Amerca and the Caribbean)</td>
                                 <td class="align-top text-end">
                                 Villahermosa, México<br>
-                                2 &ndash; 13 of August 2010<br>-----</td>
+                                2 &ndash; 13 of August 2010<br><font color="white">-</font></td>
                             </tr>
                         </tbody>
                     </table><br>
@@ -197,7 +197,7 @@
 								myNewDate = new Intl.DateTimeFormat(
 								            "de-AT",
 								            {year: "numeric", month: "numeric", day: "numeric"}
-								).format(myDate);
+								).format(myDate).replace(/\./g, '/');
 								
 								console.log('Intl.DateTimeFormat', myNewDate);
 								
