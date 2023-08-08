@@ -21,6 +21,10 @@ main {
     min-height: calc(100vh - 48px - 19px);
 }
 
+table, th, td, tr {
+	border: 1px solid white;
+}
+
 .feather {
     width: 16px;
     height: 16px;
@@ -60,7 +64,45 @@ border : 2px solid white;
     height: calc(100vh - 1px);
 }
 
+.table {
+  display: table;
+  width: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  /* width:1% if you want justified table */
+  vertical-align: middle;
+}
+
+.table-cell2 {
+  display: table-cell;
+  /* width:1% if you want justified table */
+  vertical-align: middle;
+}
+
 @media (max-width: 767.98px) {
+	@media only screen and (max-width: 617.98px)  {
+		.table {
+    	display: block				
+		}
+  		.table-cell2 {
+  		margin: 20px;
+  		margin-left: auto;
+    	margin-right: auto;
+    	display: block;
+    	width: 175px
+  		}
+  		.table-cell{
+    	display: block;
+  		margin-left: auto;
+    	margin-right: auto;
+    	width: 401px
+  		}
+  		@media only screen and (max-width: 401px)  {
+  			.table-cell {width: auto}
+  		}
+  	}
 }
 
 .sidebar-sticky {
