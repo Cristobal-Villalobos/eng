@@ -82,7 +82,7 @@ border : 2px solid white;
 }
 
 @media (max-width: 767.98px) {
-	@media only screen and (max-width: 617.98px)  {
+	@media (max-width: 617.98px)  {
 		.table {
     			display: block				
 		}
@@ -99,7 +99,7 @@ border : 2px solid white;
 		    	margin-right: auto;
 		    	width: 401px
   		}
-  		@media only screen and (max-width: 401px)  {
+  		@media (max-width: 401px)  {
   			.table-cell {width: auto}
   		}
   	}
