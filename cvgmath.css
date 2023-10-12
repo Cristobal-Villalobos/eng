@@ -9,6 +9,10 @@ body {
     min-height: calc(100vh - 48px - 19px);
 }
 
+button {
+	user-select: all;
+}
+
 footer {
     background-color: white;
 }
